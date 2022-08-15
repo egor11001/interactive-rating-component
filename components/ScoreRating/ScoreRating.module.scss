@@ -1,0 +1,55 @@
+@import '../../styles/variables';
+
+.wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+
+  .score {
+    background-color: #2a303c;
+    width: 52px;
+    height: 52px;
+    border-radius: 1000px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    color: #7a838c;
+    font-weight: 700;
+    transition: 0.15s;
+
+    &:hover {
+      background-color: #7c8898;
+      transition: 0.15s;
+      color: $white;
+    }
+
+    &:disabled {
+      background-color: $orange !important;
+      transition: 0.15s;
+      color: $white;
+    }
+
+    @media (max-width: 500px) {
+      width: 48px;
+      height: 48px;
+    }
+  }
+
+  /* .score:hover,
+  .score:hover ~ .score {
+    background-color: #7c8898;
+    transition: 0.15s;
+    color: $white;
+  }
+
+  .score:disabled,
+  .score:disabled ~ .score {
+    background-color: $orange !important;
+    transition: 0.15s;
+    color: $white;
+  } */
+}
